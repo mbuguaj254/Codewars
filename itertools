@@ -1,0 +1,10 @@
+I have four positive integers, A, B, C and D, where A < B < C < D. The input is a list of the integers A, B, C, D, AxB, BxC, CxD, DxA in some order. Your task is to return the value of D.
+
+
+from itertools import permutations
+
+# Brute force!
+def alphabet(ns):
+    for a,b,c,d,ab,bc,cd,da in permutations(ns):
+        if a < b < c < d and a*b == ab and b*c == bc and c*d == cd and d*a == da:
+            return d
