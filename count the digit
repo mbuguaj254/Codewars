@@ -8,8 +8,7 @@ Implement the function taking n and d as parameters and returning this count.
 
 
 
-
-
+##using python
 
 def nb_dig(n, d):
     
